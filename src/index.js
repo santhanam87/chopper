@@ -1,5 +1,3 @@
-const testMethod = () => {
-	return 'Test Result udpated';
-};
+const testMethod = () => 'Test Result udpated';
 
 console.info(testMethod());
