@@ -1,5 +1,5 @@
 const testMethod = () => {
-	return 'Test Result';
+	return 'Test Result udpated';
 };
 
 console.info(testMethod());
