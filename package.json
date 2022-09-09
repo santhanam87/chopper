@@ -1,0 +1,13 @@
+{
+	"name": "chopper",
+	"version": "1.0.0",
+	"description": "Chopper \"server side rendering development workflow tool\"",
+	"main": "src/index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git@personal-git:santhanam87/chopper.git"
+	},
+	"author": "santhaname",
+	"license": "ISC"
+}
