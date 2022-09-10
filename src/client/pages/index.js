@@ -8,7 +8,7 @@ const HTMLPage = ({ children, pageTitle }) => (
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>{pageTitle}</title>
-            {/* <script src="pageScript.js" async></script> */}
+            <script src="pageScript.js" async></script>
         </head>
         <body>
             <div id="root">{children}</div>

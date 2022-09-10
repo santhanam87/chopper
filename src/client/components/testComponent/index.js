@@ -1,5 +1,10 @@
 import React from 'react';
 
-const TestComponent = () => <p>Test React Component</p>;
+const TestComponent = () => {
+    const onTextClick = () => {
+        console.info('client hydrated..');
+    };
+    return <p onClick={onTextClick}>Test React Component</p>;
+};
 
 export default TestComponent;
