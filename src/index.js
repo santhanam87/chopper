@@ -1,14 +1,5 @@
-const asyncMethod = () => {
-    const testPromise = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve('return value');
-        });
-    });
-    return testPromise;
-};
-const testMethod = async () => {
-    const responseValue = await asyncMethod();
-    return responseValue;
-};
+import dotEnv from 'dotenv';
+import startExpressServer from './server';
 
-export default testMethod;
+dotEnv.config();
+startExpressServer();
