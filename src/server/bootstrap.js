@@ -5,6 +5,7 @@ import path from 'path';
 
 import { devLogger } from './services/logger';
 import router from './routes';
+import routeMetaInfo from './middleware/routeMetaInfo';
 
 const apiApp = express();
 
@@ -14,7 +15,7 @@ apiApp.use(express.urlencoded({ extended: false }));
 apiApp.use(cookieParser());
 // Static routes
 apiApp.use(express.static(path.join(__dirname, 'public')));
-
+apiApp.use(routeMetaInfo);
 // Adding routes
 apiApp.use('/', router);
 
