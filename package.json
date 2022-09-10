@@ -4,6 +4,7 @@
   "description": "Chopper \"server side rendering development workflow tool\"",
   "main": "src/index.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "npm-run-all build serve",
     "build": "webpack --config webpack.config.js --progress",
     "serve": "DEBUG=Dev node --inspect ./dist/server.js",
@@ -39,6 +40,7 @@
     "debug": "^4.3.4",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
+    "glob": "^8.0.3",
     "http-errors": "^2.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
