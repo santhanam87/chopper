@@ -1,9 +1,9 @@
 import React from 'react';
-import TestComponent from '../../client/components/testComponent';
+import OtherComponent from '../../client/components/otherComponent';
 import renderPage from '../services/renderPage';
 
 const reactPageController = async (req, res) => {
-    renderPage('Server side rendering setup', <TestComponent />, res);
+    renderPage('diffPage', 'Server side rendering setup', <OtherComponent />, res);
 };
 
 export default reactPageController;
